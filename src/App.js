@@ -2,12 +2,19 @@ import './App.css';
 
 /* MINE */
 import GalleryNavigation from './components/GalleryNavigation';
+import GalleryView from './components/GalleryView';
 import harvardArt from './data/harvardArts';
-import { Route, Switch } from 'react-router-dom';
+
+import { Route } from 'react-router-dom';
 
 function App() {
   return (
-    <GalleryNavigation galleries={harvardArt.records} />
+    <div className='page-wrapper'>
+      <GalleryNavigation galleries={harvardArt.records} />
+      <Route path='/galleries/:galleryId'>
+        <GalleryView galleries={harvardArt.records}/>
+      </Route>
+    </div>
   )
 }
 
