@@ -1,0 +1,13 @@
+.active {
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+a {
+    text-decoration: none;
+    padding: 1rem 2rem;
+}
