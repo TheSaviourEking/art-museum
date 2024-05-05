@@ -5,10 +5,7 @@ const GalleryView = ({ galleries }) => {
     const { name } = galleries.find(gallery => gallery.id === parseInt(galleryId))
 
     return (
-        <>
-            <h1>Hello from GalleryView</h1>
-            <h2>{name}</h2>
-        </>
+        <h2>{name}</h2>
     )
 }
 
