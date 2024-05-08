@@ -16,7 +16,6 @@ const ArtDescription = ({ gallery }) => {
                     objects.map(artWork => {
                         return (
                             artWork.images.map(image => {
-                                console.log(artWork)
                                 return (
                                     <div key={id++} className="artWork">
                                         <div>
