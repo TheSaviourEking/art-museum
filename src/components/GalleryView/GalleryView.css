@@ -1,0 +1,16 @@
+img {
+    /* width: 10rem; */
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.artImagePreview {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+a {
+    flex-basis: 20%;
+}
