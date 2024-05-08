@@ -5,10 +5,22 @@
 a {
     /* padding: 1rem; */
     text-decoration: none;
+    color: blue;
 }
 
 nav {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+}
+
+/* Style for active link */
+a.active {
+    font-weight: bold;
+    color: red;
+}
+
+/* Style for hovered link */
+a:hover {
+    text-decoration: underline;
 }

@@ -2,7 +2,7 @@
     flex-basis: 20%;
     display: flex;
     flex-flow: column;
-    background-color: red;
+    /* background-color: red; */
 
     align-items: center;
     justify-content: space-between;

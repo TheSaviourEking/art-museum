@@ -4,6 +4,7 @@ import './ArtDescription.css';
 
 const ArtDescription = ({ gallery }) => {
     const { objects } = gallery;
+    let id = 0;
     return (
         <div>
             <h1>Art Description</h1>
@@ -15,14 +16,17 @@ const ArtDescription = ({ gallery }) => {
                     objects.map(artWork => {
                         return (
                             artWork.images.map(image => {
+                                console.log(artWork)
                                 return (
-                                    <div className="artWork">
+                                    <div key={id++} className="artWork">
                                         <div>
                                             <img src={image.baseimageurl} alt={image.alttext}></img>
-                                            </div>
-                                        <p>{image.description}</p>
-                                        <p>{image.copyrigt}</p>
-                                        <p>{image.technique}</p>
+                                        </div>
+                                        <div>
+                                            <p>Description: {image.description ? image.description : 'description unavailable'}</p>
+                                            <p>Copyright: {image.copyright ? image.copyright : 'copyright unavailable'}</p>
+                                            <p>Technique: {image.technique ? image.technique : 'technique unavailable'}</p>
+                                        </div>
                                     </div>
                                 )
                             })
